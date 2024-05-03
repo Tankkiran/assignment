@@ -1,0 +1,220 @@
+    Que1.  Are the HTML tags and elements the same thing? 
+    ANs1 . HTML Tags are building blocks of HTML Page. HTML Elements are components that are used in HTML Page
+ 
+    Que2. What are tags and attributes in HTML? <br>
+    Ans2. HTML tags are used to hold the HTML element. HTML element holds the content and Attributes are used provide
+          additional information about elements
+    
+    Que3. What are void elements in HTML? With Example. <br>
+    Abs3. Void elements only have a start tag. end tags must not be specified for void elements
+          ex  =  &nbsp;
+          br, img, base, col, embed, hr, input, link, meta, source, track
+    
+    Que 4.  What are HTML Entities? With Example. 
+    Ans 4.  a piece of text ("string") that begins with an ampersand ( & ) and ends with a semicolon ( ; ) <br>
+            Entities are character sequences placed in the text of an HTML document to print out reserved characters <br>
+            ex 
+
+                &lt; Interpreted as the beginning of a tag 
+                &gt; Interpreted as the ending of a tag 
+                &quot; Interpreted as the beginning and end of an attribute's value. 
+                &nbsp; Interpreted as the non breaking space. 
+                &ndash; Interpreted as the en dash (half the width of an em unit). 
+                &mdash; Interpreted as the em dash (equal to width of an "m" character). 
+                &copy; Interpreted as the copyright sign. 
+        
+
+        Que 5.  What are different types of lists in HTML? With Example. 
+        ANs 5.  HTML provides you with three types of lists: 
+               (1) Ordered lists, which have an inherent order and each item is numbered. 
+               (2) Unordered lists, which have no inherent order and each item is bulleted. 
+               (3) Description lists, which contain a list of terms and descriptions for each term. 
+
+               ex ==> ordered HTML list:
+
+             <ol>
+                  <li>Coffee</li>
+                  <li>Tea</li>
+                  <li>Milk</li>
+            </ol> 
+        
+                1. cofee .2 tea .3.milk
+
+        
+ 
+            2   unordered HTML list:
+
+              <ul>
+                   <li>Coffee</li>
+                   <li>Tea</li>
+                   <li>Milk</li>
+              </ul>
+
+              . cofee .tea .milk 
+
+        
+          3 Description List
+
+              <dl>
+                  <dt>Coffee</dt>
+                  <dd>- black hot drink</dd>
+                  <dt>Milk</dt>
+                 <dd>- white cold drink</dd>
+             </dl>
+
+           Coffee
+              - black hot drink
+           Milk
+              - white cold drink
+
+        
+        Ques6.  What is the ‘class’ attribute in HTML? With Example <br>
+        Ans 6.  The class attribute specifies one or more classnames for an element. <br>
+
+                 ex => <h2 class="country">CHINA</h2>
+        
+               <p>
+                  China has the largest population
+                  in the world.
+               </p>
+     
+               <h2 class="country">INDIA</h2>
+     
+               <p>
+                    India has the second largest
+                    population in the world.
+               </p>
+        
+        Que 7.   What is the difference between the ‘id’ attribute and the ‘class’ attribute of HTml elements? With Example. <br>
+        Ans 7.  the id selector is applied only to one element in a page,  id is uniquely identify
+                whereas the class selector can be applied to several elements on a single page.  <br>
+        
+            ex => 
+               <p class="top">
+               <h1 class="top"></h1>
+               top institues is best it trainnig institues 
+              </p>
+                 <p id="tex">
+                    top institues is best it trainnig institues 
+              </p>
+        
+
+        Que 8. What are the various formatting tags in HTML? <br>
+        Ans 8. HTML contains several elements for defining text with a special meaning. 
+               HTML provides many predefined elements that are used to change the formatting of text
+               Examples of formatting elements include the b, i, u, strong, em, s, sub, and sup tags. These tags can be used to change the font style, size, color, and other visual properties of the text.
+        
+
+        Que 9.  How is cell Padding different from Cell Spacing? With Example. 
+        Ans 9.  cell padding is used to create a border around the content area of a web page.
+                cell spacing is used for positioning elements (such as images or text) within that content area.
+                cell padding can be set through CSS, 
+                cell spacing can only be controlled using HTML5.
+            2=> cellpadding = give a space between cell border and text
+                cellspacing = give a space between cells.
+             
+            ex => 
+
+             <table border="1" cellpadding="5px" cellspacing="10px">
+                <tr>
+                    <th >name</th>
+                    <th>age</th>
+                </tr>
+
+                <tr>
+                    <td >pooja</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>amit</td>
+                    <td>24</td>
+                </tr>
+            </table>
+            
+            Que 10.  How can we club two or more rows or columns into a single row or column in an table? With Example. 
+            Ans 10.  when we use rowspan remove cells form next row
+                    when we use colspan remove cells from that effected rows
+
+                    ex =>
+                   <table border="1">
+                    <tr>
+                        <th>sr.no</th>
+                        <th>name</th>
+                        <th>age</th>
+                    </tr>
+                    <tr>
+                        <td >1</td>
+                        <td rowspan="2">amit</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <!-- <td>divya</td> -->
+                        <td>26</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td colspan="2">samarth</td>
+                        <!-- <td>28</td> -->
+                    </tr>
+                   </table>
+                   
+    
+          Que 11.  What is the difference between a block-level element and an inline element? 
+          Ans 11.  A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element. <br>
+                   Inline elements never start from a new line. 
+         
+         Qus 12.  How to create a Hyperlink in HTML? With Example. 
+         Ans 12.  HTML links, created using the tag, enable navigation between web pages. They define the destination using the “href” attribute 
+
+                 (1) The most important attribute of the <a> element is the href attribute, which indicates the link's destination. 
+
+                 (2) The link text is the part that will be visible to the reader.
+            
+                 (3) Clicking on the link text, will send the reader to the specified URL address. 
+          
+                     <a href="url">link text</a>
+        
+         Que13.   What is the use of an iframe tag? With Example 
+         Ans 13.  The iframe tag specifies an inline frame.
+                  An inline frame is used to embed another document within the current HTML document. 
+                  like external ads, videos, tags, or other interactive elements into the page.  
+             
+
+         Que 14. What is the use of a span tag? Explain with example?
+         Ans 14. A <span> element which is used to color a part of a text:
+
+                  ex => <span style="color: blue;">blue eys</span> <br>
+              
+         Que 15. How to insert a picture into a background image of a web page? With Example. 
+         Ans 15. We can use the background attribute in the body tag to set an image as the background of the webpage. 
+                 ex=>
+                
+                 body{
+                   background-image: url("#");
+                 }
+            
+         Que 16. How are active links different from normal links? 
+         Ans 16. Active link is underlined and red in colour .An normal (unvisited link) is underlined and blue.
+          
+         Que 17.What are the different tags to separate sections of text? 
+         Ans 17. The <br> tag is one way to separate the lines of text. There are other tags like the (p)tag and (blockquote) tag that are also used to separate sections of text.
+             
+        Que 18.  What is SVG? 
+        Ans 18.  SVG stands for Scalable Vector Graphics. 
+                 SVG is used to define vector-based graphics for the Web 
+                 SVG defines graphics in XML format. 
+                 Each element and attribute in SVG files can be animated 
+                     
+
+        Que 19.  What is difference between HTML and XHTML? <br>
+        Ans 19   HTML (HypertextMarkup Language) and XHTML (ExtensibleHypertext Markup Language) are both markup languages used for creating and displaying web pages. <br>
+                 The main difference between them is the syntax and structure;
+                 HTML is more lenient in its syntax, while XHTML has a more strict syntax and follows XML rules. 
+                 XHTML is an older, stricter version of HTML that follows XML rules. HTML5 is the latest and more flexible version, bringing in new features for better multimedia and web applications.
+            
+
+        Que 20. What are logical and physical tags in HTML? <br>
+        Ans 20. Physical and Logical tags are used in HTML for better visibility and understanding of the text by the user on the web page <br>
+                a logical tag is a tag that describes the meaning or structure of the content it surrounds, while
+                a physical tag describes the presentation or appearance of the content. 
